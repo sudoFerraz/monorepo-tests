@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/monorepo-test/src",
+  "monorepo": true,
+  "root": "apps/monorepo-test",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/monorepo-test/tsconfig.app.json"
+  },
+  "projects": {
+    "monorepo-test": {
+      "type": "application",
+      "root": "apps/monorepo-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/monorepo-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/monorepo-test/tsconfig.app.json"
+      }
+    },
+    "authentication-service": {
+      "type": "application",
+      "root": "apps/authentication-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/authentication-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/authentication-service/tsconfig.app.json"
+      }
+    }
+  }
+}
