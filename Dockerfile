@@ -8,8 +8,7 @@ RUN apk add --no-cache bash
 RUN npm install
 
 COPY . /app
-RUN npm install
 
 EXPOSE 5000
 
-CMD ["nest", "start"]
+CMD ["yarn", "start"]
