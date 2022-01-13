@@ -4,10 +4,8 @@ WORKDIR /app
 
 COPY package*.json /workspace/
 
-RUN apk add --no-cache bash
-RUN npm install
-
 COPY . /app
+RUN npm install
 
 EXPOSE 5000
 
