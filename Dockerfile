@@ -11,4 +11,4 @@ COPY . /app
 
 EXPOSE 5000
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
